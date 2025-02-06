@@ -1,0 +1,22 @@
+[
+    {
+        "off":"10% off",
+        "name":"Apple MacBook Pro ",
+        "price":"$ 500.00",
+        "line":"line1.svg",
+        "imges":"newlaptop.png",
+        "tags":"Tags (1).svg"
+        
+        
+    },
+    {
+        "off":"15% off",
+        "name":"JBL Headphones ",
+        "price":"$ 600.00",
+        "line":"line1.svg",
+        "imges":"newhadphones.png",
+        "tags":"Tags (2).svg"
+        
+        
+    }
+]

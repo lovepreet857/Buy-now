@@ -1,0 +1,63 @@
+[
+    {
+        "head":"Men's Watches",
+        "watch1":"watch1.png",
+        "watch2":"watch2.png",
+        "watch3":"watch3.png",
+        "watch4":"watch4.png",
+       "button":"View all",
+       "right":"right.svg"
+
+    },
+   
+    {
+        "head":"Woman’s Watches",
+        "watch1":"watch(4).png",
+        "watch2":"watch(6).png",
+        "watch3":"watch(5).png",
+        "watch4":"watch(7).png",
+       "button":"View all",
+       "right":"right.svg"
+
+    },
+    {
+        "head":"Smart Watches",
+        "watch1":"smart4.png",
+        "watch2":"smart2.png",
+        "watch3":"smart3.png",
+        "watch4":"smart1 (2).png",
+       "button":"View all",
+       "right":"right.svg"
+
+    },
+    {
+        "head":"Boy's Watches",
+        "watch1":"boywatch.png",
+        "watch2":"boywatch1.png",
+        "watch3":"boywatch2.png",
+        "watch4":"boywatch3.png",
+       "button":"View all",
+       "right":"right.svg"
+
+    },
+    {
+        "head":"Top brands",
+        "watch1":"watch 953.png",
+        "watch2":"watch 952.png",
+        "watch3":"watch 951.png",
+        "watch4":"watch 950.png",
+       "button":"View all",
+       "right":"right.svg"
+
+    },
+    {
+        "head":"Watches",
+        "watch1":"Rectangle1.png",
+        "watch2":"Rectangle2.png",
+        "watch3":"Rectangle3.png",
+        "watch4":"Rectangle4 (2).png",
+       "button":"View all",
+       "right":"right.svg"
+
+    }
+]

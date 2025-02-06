@@ -1,0 +1,52 @@
+[
+    {
+        "newadd":"Badge.svg",
+        "Images": "NewData1.png",
+        "Name": "Headphones",
+        "Rating": "Rating.svg",
+        "Price": "$ 222.00",
+        "Cart": "shop.svg",
+        "Items": "New",
+        "Heart": "hart.svg"
+    },
+    {
+       
+        "Name": "Apple Laptop",
+        "Images": "NewData2.png",
+        "Rating": "Rating.svg",
+        "Price": "$ 300.00",
+        "Cart": "shop.svg",
+        "Items": "New",
+        "Heart": "hart.svg"
+    },
+    {
+        
+        "Images": "NewData3.png",
+        "Name": "Smart phone",
+        "Rating": "Rating.svg",
+        "Price": "$ 203.00",
+        "Cart": "shop.svg",
+        "Items": "New",
+        "Heart": "hart.svg"
+    },
+    {
+        "newadd":"Badge.svg",
+        "Images": "NewData4.png",
+        "Name": "Smart phone",
+        "Rating": "Rating.svg",
+        "Price": "$ 102.00",
+        "Cart": "shop.svg",
+        "Items": "New",
+        "Heart": "hart.svg"
+    },
+    {
+        
+        "Images": "NewData3.png",
+        "Name": "Smart phone",
+        "Rating": "Rating.svg",
+        "Price": "$ 203.00",
+        "Cart": "shop.svg",
+        "Items": "New",
+        "Heart": "hart.svg"
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre1.svg",
+        "Image":"laptop.png",
+        "Paragraph":"Hp 15S AMD Ryzen 3- 5300U 15.6 Inches ",
+        "Price":"$ 400.00"
+       
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre2.svg",
+        "Image":"camera.png",
+        "Paragraph":"Samsung Galaxy M12 (Blue, 4GB RAM)",
+        "Price":"$ 253.00"
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre1.svg",
+        "Image":"iphone.png",
+        "Paragraph":"Apple iPhone 13 Pro Max (128GB) ",
+        "Price":"$ 320.00"
+    },
+    { 
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre2.svg",
+        "Image":"iphonetab.png",
+        "Paragraph":"Apple iPhone SE (64 GB) - Midnight ",
+        "Price":"$ 300.00"
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre1.svg",
+        "Image":"laptop.png",
+        "Paragraph":"Hp 15S AMD Ryzen 3- 5300U 15.6 Inches ",
+        "Price":"$ 400.00"
+       
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre2.svg",
+        "Image":"camera.png",
+        "Paragraph":"Samsung Galaxy M12 (Blue, 4GB RAM)",
+        "Price":"$ 253.00"
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre1.svg",
+        "Image":"iphone.png",
+        "Paragraph":"Apple iPhone 13 Pro Max (128GB) ",
+        "Price":"$ 320.00"
+    },
+    { 
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre2.svg",
+        "Image":"iphonetab.png",
+        "Paragraph":"Apple iPhone SE (64 GB) - Midnight ",
+        "Price":"$ 300.00"
+    }
+    
+    
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "newadd":"Badge.svg",
+        "Images":"Brand1.png",
+        "Name":"I Phone Apple",
+        "Rating":"Rating.svg",
+        "Price":"$ 222.00",
+        "Cart":"shop.svg",
+        "Items":"New",
+        "Heart":"hart.svg"
+    },
+    {
+        "newadd":"Badge.svg",
+        "Images":"Brand2.png",
+        "Name":"boAt Airdopes 2v1.0 Tr..",
+        "Rating":"Rating.svg",
+        "Price":"$ 300.00",
+        "Cart":"shop.svg",
+        "Items":"New",
+        "Heart":"hart.svg"
+    },
+    {
+        "Images":"Brand3.png",
+        "Name":"TWS Earbuds with Mic",
+        "Rating":"Rating.svg",
+        "Price":"$ 203.00",
+        "Cart":"shop.svg",
+        "Items":"New",
+        "Heart":"hart.svg"
+    },
+    {
+        "Images":"Brand4.png",
+        "Name":"boAt Wave Lite Smartwa..",
+        "Rating":"Rating.svg",
+        "Price":"$ 102.00",
+        "Cart":"shop.svg",
+        "Items":"New",
+        "Heart":"hart.svg"
+    },
+    {
+        "Images":"Brand4.png",
+        "Name":"boAt Wave Lite Smartwa..",
+        "Rating":"Rating.svg",
+        "Price":"$ 102.00",
+        "Cart":"shop.svg",
+        "Items":"New",
+        "Heart":"hart.svg"
+    }
+
+]
