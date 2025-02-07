@@ -61,8 +61,6 @@ function applewatch() {
                                             </button>
                                         </div>
                                     </div>
-
-
                                 </>
                             ))
                         }
