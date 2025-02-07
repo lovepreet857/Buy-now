@@ -50,7 +50,7 @@ function card() {
                           slidesPerView: 3.58,
                         },
                       }}
-                      
+                    
                       navigation={false}
                       modules={[Navigation]}
                       className="mySwiper"
