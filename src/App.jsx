@@ -6,6 +6,7 @@ import Home from "../src/pages/Home"
 import About from "../src/pages/About"
 import Card from "./pages/Card"
 import Help_Center from "./pages/Help_Center"
+import Touch from "./pages/touch"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 
@@ -20,6 +21,7 @@ function App() {
   <Route path="/card" element={<Card/>}/>
   <Route path="/about" element={<About/>}/>
   <Route path="/help_canter" element={<Help_Center/>}/>
+  <Route path="/touch" element={<Touch/>}/>
 
 
 </Routes>

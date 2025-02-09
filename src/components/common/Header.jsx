@@ -50,7 +50,7 @@ const Header = () => {
                 <Link to="/"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Home</p></Link>
                 <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Top deals</p>
                 <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Hot offers</p>
-                <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Pages</p>
+                <Link to="touch"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Pages</p></Link>
               </div>
             </div>
             <div className=' hidden md:flex md:max-w-[198px] lg:max-w-[498px] w-full justify-between'>
