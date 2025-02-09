@@ -19,6 +19,7 @@ export default {
        white:{
         white_100:"#FFFFFF",
         white_2:"#F7F6F8",
+        white_200:"#42265914",
        },
        gray:{
          gray_100:"#C4CFD4",

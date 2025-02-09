@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import appledata from "../../json/applewatch.json"
+import New from '../../json/Filter.json'
+
 function applewatch() {
     const [active, setActive] = useState(false);
     const [arrow, setArrow] = useState(false);
@@ -20,8 +22,65 @@ function applewatch() {
                     <div className=' sm:flex justify-between pb-6'>
                         <p className='hidden sm:block font-font_inter text-gray-gray_200 text-[16px]'>Showing 1–9 of 200 results</p>
                         <div className=' md:max-w-[233px] md:w-full flex justify-between leading-[24px] text-[14px] text-purple-purple_100 font-font_inter'>
-                            <button className='py-[6px]  px-4 border rounded-[20px] max-w-[104px]  w-full flex items-center gap-2 hover:scale-105 duration-300 ease-in hover:shadow-lg '>Filter <img src="src/assets/icons/filter (2).svg" alt="" /></button>
-                            <button onClick={() => setArrow(!arrow)} className='py-[6px] px-4 border rounded-[20px] max-w-[104px] w-full flex items-center gap-2 hover:scale-105 duration-300 ease-in hover:shadow-lg '>Sort by <img className={`transition-all duration-300 ${arrow && "rotate-180"}`} src="src/assets/icons/bluedowne (2).svg" alt="" /></button>
+                            <button onClick={() => setArrow(!arrow)} className='py-[6px] relative  px-4 border rounded-[20px] max-w-[104px]  w-full flex items-center gap-2 hover:scale-105 duration-300 ease-in hover:shadow-lg '>Filter <img src="src/assets/icons/filter (2).svg" alt="" /></button>
+
+                            <button className='py-[6px] px-4 border rounded-[20px] max-w-[104px] w-full flex items-center gap-2 hover:scale-105 duration-300 ease-in hover:shadow-lg '>Sort by <img src="src/assets/icons/bluedowne (2).svg" alt="" /></button>
+
+                            {
+                                arrow && (<>
+                                    <div className='max-w-[270px] absolute z-50 top-[270px] right-[45px] sm:top-[430px] lg:right-[175px]  bg-white-white_100 w-full rounded-[20px] border'>
+                                        <div className='flex justify-between py-[32px] px-5 border-b'>
+                                            <p className='text-[20px] font-font_heebo leading-[32px]'>Filter</p>
+                                            <button onClick={() => setArrow(!arrow)}>
+
+                                            <p className='text-[14px] font-font_inter leading-6 text-purple-purple_200'>Clear all</p>
+                                            </button>
+                                        </div>
+                                        <div className='mt-[10px] p-5 border-b'>
+                                            <div className='flex justify-between pb-[10px] font-font_inter text-[16px]'>
+                                                <p>Category</p>
+                                                <button onClick={() => setActive(!active)}>
+
+                                                    <img className={`transition-all duration-700 ${active && "rotate-180"}`} src="src/assets/icons/Newvector.svg" alt="" />
+                                                </button>
+                                            </div>
+                                            <div className={`transition-all duration-300   ${active && "  grid gap-[5px]  pb-[10px]"}`} hidden >
+                                                {
+                                                    New.map((item, index) => (
+                                                        <div key={index + Date.now() + item}>
+
+                                                            <p className={`transition-all duration-700 ease-in  ${active && "w-full  hover:bg-white-white_200 rounded-[20px] py-1 pl-4 font-font_inter text-[14px] text-gray-gray_200"}`}>{item.name}</p>
+
+
+                                                        </div>
+                                                    ))
+                                                }
+
+
+                                            </div>
+                                            <button onClick={() => setActive(!active)}>
+                                                <p className='font-font_inter text-[16px] text-purple-purple_200'>View all</p>
+                                            </button>
+                                        </div>
+                                        <div className='mt-[10px] p-5 border-b'>
+                                            <div className='flex justify-between pb-[10px] font-font_inter text-[16px]'>
+                                                <p>Price</p>
+                                                <button>
+                                                    <img src="src/assets/icons/Newvector.svg" alt="" />
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <input className='w-full py-[21px]' type="range" name="" id="" />
+                                            </div>
+                                            <div className=' flex justify-between font-font_inter text-[14px] text-gray-gray_200'>
+                                                <p>low: $50.00</p>
+                                                <p>High: $500.00</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </>) 
+                            }
 
                         </div>
                         <p className=' pt-[10px] sm:hidden font-font_inter text-gray-gray_200 text-[14px] '>Showing 1–9 of 200 results</p>
