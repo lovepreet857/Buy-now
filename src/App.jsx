@@ -4,7 +4,8 @@ import Header from "./components/common/Header"
 import Footer from "./components/common/Footer"
 import Home from "../src/pages/Home"
 import About from "../src/pages/About"
-import Card from "./pages/card"
+import Card from "./pages/Card"
+import Help_Center from "./pages/Help_Center"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 
@@ -18,6 +19,9 @@ function App() {
   <Route path="/" element={<Home/>}/>
   <Route path="/card" element={<Card/>}/>
   <Route path="/about" element={<About/>}/>
+  <Route path="/help_canter" element={<Help_Center/>}/>
+
+
 </Routes>
   <Footer/>
   </BrowserRouter>

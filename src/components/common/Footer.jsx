@@ -78,7 +78,10 @@ const Footer = () => {
                   <div className=' max-w-[564px] w-full flex justify-between border-y border-white-white_100 py-[41.5px] font-font_inter'>
                     <p>© 2021. All rights reserved</p>
                     <div className='flex gap-11 text-gray-gray_100'>
+                     <Link to="/help_canter"> <button>
                       <p>Help Center</p>
+                      </button>
+                      </Link>
                       <p>Terms of Service</p>
                     </div>
                   </div>

@@ -15,7 +15,7 @@ const Header = () => {
                 <p>Free delivery on $100.00</p>
               </div>
               <div className="flex gap-7">
-                <div><p>Help center</p></div>
+              <Link to="/help_canter"><button><p>Help center</p></button></Link>
                 <div className=' hidden md:flex'>
                   <div><p>Returns policy</p></div>
                   <div className='flex gap-2'><p>Support</p><p>(+00) 0123456789</p></div>
@@ -73,7 +73,6 @@ const Header = () => {
                 <img src="src/assets/icons/Rectangle 19.svg" alt="" />
                 <div className='border-[1px] hover:bg-yellow-yellow_102 duration-300 ease-in rounded-[50%] py-[10px] px-[10px]'>
                   <img   src="src/assets/icons/PersonOutlineOutlined.svg" alt="" />
-                  {/* <img src="src/assets/icons/new12.svg" alt="" /> */}
                 </div>
               </div>
             </div>

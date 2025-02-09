@@ -24,6 +24,7 @@ export default {
        gray:{
          gray_100:"#C4CFD4",
          gray_200:"#495F6A",
+         gray_300:"#ABB5BA",
        },
        purple:{
       purple_100:"#422659",
