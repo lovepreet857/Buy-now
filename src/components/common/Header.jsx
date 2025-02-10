@@ -51,7 +51,7 @@ const Header = () => {
                   <Link to="/"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Home</p></Link>
                   <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Top deals</p>
                   <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Hot offers</p>
-                  <Link to="touch"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Pages</p></Link>
+                 <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Pages</p>
                 </div>
               </div>
               <div className=' hidden md:flex md:max-w-[198px] lg:max-w-[498px] w-full justify-between'>
@@ -72,9 +72,11 @@ const Header = () => {
                   <img src="src/assets/icons/Rectangle 19.svg" alt="" />
                   <img src="src/assets/icons/Badge W.Icon.svg" alt="" />
                   <img src="src/assets/icons/Rectangle 19.svg" alt="" />
-                  <div className='border-[1px] hover:bg-yellow-yellow_102 duration-300 ease-in rounded-[50%] py-[10px] px-[10px]'>
+                  <Link to="touch">
+                  <button className='border-[1px] hover:bg-yellow-yellow_102 duration-300 ease-in rounded-[50%] py-[10px] px-[10px]'>
                     <img src="src/assets/icons/PersonOutlineOutlined.svg" alt="" />
-                  </div>
+                  </button>
+                  </Link>
                 </div>
               </div>
             </nav>

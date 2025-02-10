@@ -22,7 +22,8 @@ function help2() {
                                 <img className={`transition-all duration-300 ${button1 && "rotate-180"}`} src="src/assets/icons/Newvictor2blue.svg" alt="" />
                             </button>
                         </div>
-                        <p className={`transition-all duration-500 ${button1 && ' block text-gray-gray_200 text-[16px] pb-[36px] pt-2 font-font_inter'}`} hidden>Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
+                       <p className={`transition-all duration-300 text-gray-gray_200 text-[16px]   font-font_inter ${button1 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
+
                         <div className='flex justify-between items-center py-[10px] sm:py-5 text-[16px] font-font_inter border-y'>
                             <p className='py-3'>Eget gravida sapien, volutpat blandit ut sem.</p>
                             <button onClick={()=> setButton2(!button2)}>
@@ -30,7 +31,7 @@ function help2() {
                                 <img className={`transition-all duration-300 ${button2 && "rotate-180"}`} src="src/assets/icons/Newvictor2blue.svg" alt="" />
                             </button>
                         </div>
-                        <p className={`transition-all duration-500 ${button2 && ' block text-gray-gray_200 text-[16px] pb-[36px] pt-2 font-font_inter'}`} hidden>Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
+                        <p className={`transition-all duration-300 text-gray-gray_200 text-[16px]   font-font_inter ${button2 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
 
                         <div className='flex justify-between items-center py-[10px] sm:py-5 text-[16px] font-font_inter border-y'>
                             <p className='py-3'>Sed dui dolor commodo auctor tristique.</p>
@@ -39,7 +40,7 @@ function help2() {
                                 <img className={`transition-all duration-300 ${button3 && "rotate-180"}`} src="src/assets/icons/Newvictor2blue.svg" alt="" />
                             </button>
                         </div>
-                        <p className={`transition-all duration-500 ${button3 && ' block text-gray-gray_200 text-[16px] pb-[36px] pt-2 font-font_inter'}`} hidden>Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
+                        <p className={`transition-all duration-300 text-gray-gray_200 text-[16px]   font-font_inter ${button3 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
 
                         <div className='flex justify-between items-center py-[10px] sm:py-5 text-[16px] font-font_inter border-y'>
                             <p className='py-3'>Ac iaculis turpis maecenas tellus.</p>
@@ -48,16 +49,16 @@ function help2() {
                                 <img className={`transition-all duration-300 ${button4 && "rotate-180"}`} src="src/assets/icons/Newvictor2blue.svg" alt="" />
                             </button>
                         </div>
-                        <p className={`transition-all duration-500 ${button4 && ' block text-gray-gray_200 text-[16px] pb-[36px] pt-2 font-font_inter'}`} hidden>Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
+                        <p className={`transition-all duration-300 text-gray-gray_200 text-[16px]   font-font_inter ${button4 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
 
-                        <div className='flex justify-between items-center py-[10px] sm:py-5 text-[16px] font-font_inter border-y'>
+                        <div className='flex justify-between items-center py-[10px]  sm:py-5 text-[16px] font-font_inter border-y  '>
                             <p className='py-3'>Dignissim tortor vitae massa vel, id amet.</p>
                             <button onClick={()=> setButton5(!button5)}>
 
                                 <img className={`transition-all duration-300 ${button5 && "rotate-180"}`} src="src/assets/icons/Newvictor2blue.svg" alt="" />
                             </button>
                         </div>
-                        <p className={`transition-all duration-500 ${button5 && ' block text-gray-gray_200 text-[16px] pb-[36px] pt-2 font-font_inter'}`} hidden>Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
+                        <p className={`transition-all duration-300 text-gray-gray_200 text-[16px]   font-font_inter ${button5 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
 
                     </div>
 

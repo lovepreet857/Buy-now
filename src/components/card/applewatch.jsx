@@ -62,21 +62,55 @@ function applewatch() {
                                                 <p className='font-font_inter text-[16px] text-purple-purple_200'>View all</p>
                                             </button>
                                         </div>
-                                        <div className='mt-[10px] p-5 border-b'>
-                                            <div className='flex justify-between pb-[10px] font-font_inter text-[16px]'>
+                                        <div className='my-[10px] p-5 border-b'>
+                                            <div className='flex justify-between pb-[10px] font-font_inter text-[16px] text-black-black_300'>
                                                 <p>Price</p>
                                                 <button>
                                                     <img src="src/assets/icons/Newvector.svg" alt="" />
                                                 </button>
                                             </div>
                                             <div>
-                                                <input className='w-full py-[21px]' type="range" name="" id="" />
+                                                <input className='w-full py-[21px] ' type="range" name="" id="" />
                                             </div>
                                             <div className=' flex justify-between font-font_inter text-[14px] text-gray-gray_200'>
                                                 <p>low: $50.00</p>
                                                 <p>High: $500.00</p>
                                             </div>
                                         </div>
+                                       <div className='p-5 mb-[10px] border-b'>
+                                       <div className='flex justify-between pb-[10px] font-font_inter text-[16px] text-black-black_300 '>
+                                                <p>Color</p>
+                                                <button>
+                                                    <img src="src/assets/icons/Newvector.svg" alt="" />
+                                                </button>
+                                            </div>
+                                       </div>
+                                       <div className='p-5 mb-[10px] border-b'>
+                                       <div className='flex justify-between pb-[10px] font-font_inter text-[16px] text-black-black_300 rounded-[5px]'>
+                                                <p>Brands</p>
+                                                <button>
+                                                    <img src="src/assets/icons/Newvector.svg" alt="" />
+                                                </button>
+                                            </div>
+                                       </div>
+
+                                       <div className='p-5 mb-[10px] border-b'>
+                                       <div className='flex justify-between pb-[10px] font-font_inter text-[16px] text-black-black_300 rounded-[5px]'>
+                                                <p>Customer review</p>
+                                                <button>
+                                                    <img src="src/assets/icons/Newvector.svg" alt="" />
+                                                </button>
+                                            </div>
+                                       </div>
+                                       <div className='p-5 mb-[10px] border-b'>
+                                       <div className='flex justify-between pb-[10px] font-font_inter text-[16px] text-black-black_300 rounded-[5px]'>
+                                                <p>Discount</p>
+                                                <button>
+                                                    <img src="src/assets/icons/Newvector.svg" alt="" />
+                                                </button>
+                                            </div>
+                                       </div>
+
 
                                     </div>
                                 </>) 
