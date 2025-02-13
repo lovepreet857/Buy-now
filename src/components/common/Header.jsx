@@ -49,7 +49,7 @@ const Header = () => {
                 </div>
                 <div className=' hidden lg:flex gap-2 justify-around max-w-[380px] w-full text-4 text-gray-gray_200 items-center'>
                   <Link to="/"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Home</p></Link>
-                  <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Top deals</p>
+                  <Link to="topdetail"> <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Top deals</p></Link>
                   <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Hot offers</p>
                  <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Pages</p>
                 </div>

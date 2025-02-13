@@ -51,14 +51,14 @@ function help2() {
                         </div>
                         <p className={`transition-all duration-300 text-gray-gray_200 text-[16px]   font-font_inter ${button4 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
 
-                        <div className='flex justify-between items-center py-[10px]  sm:py-5 text-[16px] font-font_inter border-y  '>
+                        <div className='flex justify-between items-center py-[10px]  sm:py-5 text-[16px] font-font_inter  '>
                             <p className='py-3'>Dignissim tortor vitae massa vel, id amet.</p>
                             <button onClick={()=> setButton5(!button5)}>
 
                                 <img className={`transition-all duration-300 ${button5 && "rotate-180"}`} src="src/assets/icons/Newvictor2blue.svg" alt="" />
                             </button>
                         </div>
-                        <p className={`transition-all duration-300 text-gray-gray_200 text-[16px]   font-font_inter ${button5 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
+                        <p className={`transition-all duration-300 text-gray-gray_200 text-[16px] font-font_inter ${button5 ? "h-[72px]  overflow-hidden p-[8px_16px_16px_16px]":"h-0 p-0 overflow-hidden"}`} >Consectetur adipiscing elit. Amet mauris eget vestibulum tempor, maecenas. Mattis egestas augue vitae in sed ut. Nec donec massa, at scelerisque tempor, elit vitae aliquam. Donec pulvinar sollicitudin feugiat diam iaculis pulvinar faucibus suspendisse tincidunt.</p>
 
                     </div>
 

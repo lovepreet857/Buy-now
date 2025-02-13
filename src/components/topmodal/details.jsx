@@ -1,29 +1,33 @@
 import React, { useState } from 'react'
-import appledata from "../../json/applewatch.json"
+import Detail from '../../json/detail.json'
 import New from '../../json/Filter.json'
 
-function applewatch() {
-    const [active, setActive] = useState(false);
-    const [arrow, setArrow] = useState(false);
-    const [button, setButton] = useState(false)
-    const [color, setColor] = useState(false);
-    return (
-        <>
-            <section>
-                <div className='container'>
-                    <div className='sm:py-20 pt-10 pb-5'>
-                        <p className='text-[24px] sm:text-[34px] leading-[41px] font-font_heebo pb-[14px] sm:border-none border-b  sm:pb-[10px]'>Apple watches</p>
-                        <div className='hidden  sm:flex items-center gap-2 text-[16px] leading-[24px] border-b  pt-[10px] font-font_inter'>
-                            <button className='text-gray-gray_200 hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in' >Home</button>
-                            <button onClick={() => setButton(!button)}>
-                                <img className={`transition-all duration-300 ${button && "rotate-90"}`} src="src/assets/icons/leftblue.svg" alt="" />
-                            </button>
-                            <p>Products</p>
-                        </div>
-                    </div>
-                    <div className=' sm:flex justify-between pb-6'>
-                        <p className='hidden sm:block font-font_inter text-gray-gray_200 text-[16px]'>Showing 1–9 of 200 results</p>
-                        <div className=' md:max-w-[233px] w-full h-[36px] flex justify-between leading-[24px] text-[14px] text-purple-purple_100 font-font_inter'>
+
+function details() {
+  const [active, setActive] = useState(false);
+  const [arrow, setArrow] = useState(false);
+  const [button, setButton] = useState(false)
+  const [color, setColor] = useState(false);
+  return (
+    <>
+      <section>
+        <div className='container'>
+          <div className=' sm:py-20 pt-10 pb-5 '>
+            <p className='text-[24px] sm:text-[34px] leading-[41px] font-font_heebo pb-[14px] sm:border-none border-b sm:pb-[10px]'>Top deals</p>
+            <div className='hidden  sm:flex items-center gap-2 text-[16px] pb-5 border-b   leading-[24px] pt-[10px] font-font_inter'>
+              <button className='text-gray-gray_200 hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in' >Home</button>
+              <button onClick={() => setButton(!button)}>
+                <img className={`transition-all duration-300 ${button && "rotate-90"}`} src="src/assets/icons/leftblue.svg" alt="" />
+              </button>
+              <p>Products</p>
+            </div>
+          </div>
+          <div className=' sm:flex justify-between pb-6'>
+            <div className='hidden sm:block'>
+              <p className='pb-[10px] text-[20px] font-font_heebo'>All deals</p>
+              <p className='hidden sm:block font-font_inter text-gray-gray_200 text-[16px]'>Showing 1–9 of 200 results</p>
+            </div>
+            <div className=' md:max-w-[233px] w-full  h-[36px] flex justify-between leading-[24px] text-[14px] text-purple-purple_100 font-font_inter'>
                             <button onClick={() => setArrow(!arrow)} className='py-[6px] relative  px-4 border rounded-[20px] max-w-[104px]  w-full flex items-center gap-2 hover:scale-105 duration-300 ease-in hover:shadow-lg '>Filter <img src="src/assets/icons/filter (2).svg" alt="" /></button>
 
                             <button className='py-[6px] px-4 border rounded-[20px] max-w-[104px] w-full flex items-center gap-2 hover:scale-105 duration-300 ease-in hover:shadow-lg '>Sort by <img src="src/assets/icons/bluedowne (2).svg" alt="" /></button>
@@ -46,8 +50,7 @@ function applewatch() {
                                                     <img className={`transition-all duration-700 ${active && "rotate-180"}`} src="src/assets/icons/Newvector.svg" alt="" />
                                                 </button>
                                             </div>
-                                            <div className={` transition-all duration-300 overflow-hidden   ${active ? "h-[291px]" : "h-0"
-                                                }`}>
+                                            <div className={`transition-all duration-300   ${active && "  grid gap-[5px]  pb-[10px]"}`} hidden >
                                                 {
                                                     New.map((item, index) => (
                                                         <div key={index + Date.now() + item}>
@@ -90,9 +93,9 @@ function applewatch() {
                                                 {["#1F292D", "#1976D2", "#81C784", "#4DD0E1", "#4DB6AC", "#78909C", "#67517A", "#FF8A65", "#FFB74D",
                                                     "#BA68C8"].map((items, index) => (
                                                         <div key={index + Date.now() + items}>
-                                                            <div className=' hover:border rounded-full w-[25px] h-[25px] p-[3px]'>
-                                                                <div key={index} style={{ backgroundColor: items }} className=" rounded-full h-full w-full  "></div>
-                                                            </div>
+                                                        <div className=' hover:border rounded-full w-[25px] h-[25px] p-[3px]'>
+                                                            <div key={index} style={{ backgroundColor: items }} className=" rounded-full h-full w-full  "></div>
+                                                        </div>
                                                         </div>
                                                     ))}
                                             </div>
@@ -129,48 +132,48 @@ function applewatch() {
                             }
 
                         </div>
-                        <p className=' pt-[10px] sm:hidden font-font_inter text-gray-gray_200 text-[14px] '>Showing 1–9 of 200 results</p>
-                    </div>
+            <div className='sm:hidden py-[10px]'>
+              <p className='sm:pb-[10px] text-[20px] font-font_heebo'>All deals</p>
+              <p className=' pt-[10px]  font-font_inter text-gray-gray_200 text-[14px] '>Showing 1–9 of 200 results</p>
+            </div>
+          </div>
+          <div className=' grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center'>
+          {
+                Detail.map((item,index)=>(
+                  <div className=' max-w-[270px] w-full border transition-all hover:scale-105 duration-300 ease-in hover:shadow-xl rounded-[10px] bg-[#42265914] ]'>
+                  <div key={index + Date.now() + item} className=' relative'>
+                        <img className=' absolute top-5 left-5' src={`src/assets/icons/${item.offre}`} alt="" />
 
-                    <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:justify-between justify-center sm:gap-4 md:gap-5 lg:gap-6 gap-3'>
-                        {
-                            appledata.map((items, index) => (
-                                <div key={index + Date.now() + items}>
+                        <img className=' absolute right-[31px] top-[10px]' src={`src/assets/icons/${item.imge1}`} alt="" />
+                        <div className='max-w-[270px] h-[240px] p-10 w-full '>
 
-                                    <div className="max-w-[270px] rounded-[20px] border hover:scale-105 duration-300 ease-in hover:shadow-lg">
-                                        <div className="bg-white-white_2 relative rounded-t-[20px]">
-                                            <div className=' absolute right-[20px] top-[20px] flex gap-2'>
-                                                <button>
-                                                    <img src="src/assets/icons/hart.svg" alt="" />
-                                                </button>
-                                            </div>
-                                            <img src={`src/assets/Images/${items.whatch}`} alt="" />
-                                        </div>
-                                        <div className="flex justify-between py-5  w-full ">
-                                            <div className="w-full max-w-[270px] pb-[10px] rounded-[5px] px-5 border-b-2">
-                                                <p className='text-[16px] font-font_inter text-gray-gray_200'>{items.pragragh}</p>
-                                                <div className="flex max-w-[230px] w-full justify-between items-center pt-[10px]">
-                                                    <p className='text-[24px] font-font_heebo w-[130px]'>{items.price}</p>
-                                                    <img src="src/assets/icons/Rating.svg" alt="stars" />
-                                                </div>
+                            <img className='' src={`src/assets/Images/${item.Image}`} alt="gsdjfs" />
 
-                                            </div>
-
-                                        </div>
-                                        <div className='flex w-full px-5 justify-between items-center pb-5'>
-                                            <button>
-                                                <p className='text-purple-purple_100 text-[14px] font-font_inter'>In stock</p>
-                                            </button>
-                                            <button className="bg-[#422659] rounded-full p-[6.67px] ">
-                                                <img src="src/assets/icons/shop.svg" alt="" />
-                                            </button>
-                                        </div>
+                        </div>
+                        <div className='flex justify-center gap-2'>
+                            <div className='w-[8px] h-[8px] rounded-[50%] bg-[#E57373]'></div>
+                            <div className='w-[8px] h-[8px] rounded-[50%] bg-[#FFB400]'></div>
+                            <div className='w-[8px] h-[8px] rounded-[50%] bg-[#EC407A]'></div>
+                            <div className='w-[8px] h-[8px] rounded-[50%] bg-[#2E1A3E]'></div>
+                        </div>
+                        <div className='max-w-[270px] w-full py-5 px-5 '>
+                            <p className='sm:text-base md:text-sm text-gray-gray_200 h-[48px] max-w-[230px] font-font_inter' >{item.Paragraph}</p>
+                            <div className='flex items-center justify-between  border-t mt-[10px] pt-[10px]'>
+                                <p className=' hover:text-yellow-yellow_101 font-font_heebo text-[20px]'>{item.Price}</p>
+                                <button className='py-[6px] px-2'>
+                                    <div className='flex gap-2 w-[54px] items-end text-purple-purple_100'>
+                                        <p>{item.Buy}</p>
+                                        <img src={`src/assets/icons/${item.imge12}`} alt="" />
                                     </div>
-                                </div>
-                            ))
-                        }
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div className='max-w-[234px] w-full flex pt-5 gap-[6px] mx-auto justify-center font-font_inter'>
+                    </div>
+                ))
+          }
+          </div>
+          <div className='max-w-[234px] w-full flex pt-5 gap-[6px] mx-auto justify-center font-font_inter'>
                         <button className='py-[6px] '><img src="src/assets/icons/left1.svg" alt="left" /></button>
                         <button className='py-[6px] px-[12.5px] hover:text-white-white_100 hover:bg-purple-purple_200 rounded-[30px]'>1</button>
                         <button className='py-[6px] px-[12.5px] hover:text-white-white_100 hover:bg-purple-purple_200 rounded-[30px]'>2</button>
@@ -179,11 +182,10 @@ function applewatch() {
                         <button className='py-[6px]'><img src="src/assets/icons/leftblue.svg" alt="right" /></button>
 
                     </div>
-
-                </div>
-            </section>
-        </>
-    )
+        </div>
+      </section>
+    </>
+  )
 }
 
-export default applewatch
+export default details

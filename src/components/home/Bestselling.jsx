@@ -1,7 +1,7 @@
 import React from 'react'
 import bestdata from '../../json/bests.json'
 import appldata from '../../json/appl.json'
-import { Link } from 'react-router-dom'
+import { data, Link } from 'react-router-dom'
 
 
 function Bestselling() {
@@ -19,8 +19,8 @@ function Bestselling() {
                     <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-[24px]'>
                         {
                             bestdata.map((items, index) => (
-                                <>
-                                    <div key={index} className=' p-[30px] max-w-[270px] w-full border rounded-[20px] hover:shadow-lg duration-300 ease-in'>
+                                 <div key={index + Date.now() + items}>
+                                    <div className=' p-[30px] max-w-[270px] w-full border rounded-[20px] hover:shadow-lg duration-300 ease-in'>
                                         <div>
                                             <img className='hover:scale-105 duration-300 ease-in hover:shadow-lg ' src={`src/assets/Images/${items.img1}`} alt="" />
                                             <div className='w-[161px] pt-5 grid gap-[10px]  justify-items-center text-[20px] font-font_heebo'>
@@ -37,7 +37,7 @@ function Bestselling() {
                                         </div>
 
                                     </div>
-                                </>
+                                </div>
                             ))
                         }
                         <div className=' px-[30px] pt-20 pb-[50px] max-w-[270px] w-full border rounded-[20px] transition-all hover:scale-105 duration-300 ease-in bg-[url(src/assets/Images/bgimg.png)] bg-cover'>
@@ -53,8 +53,8 @@ function Bestselling() {
                 <div className='grid md:grid-cols-2 justify-between gap-5'>
                     {
                         appldata.map((item, index) => (
-                            <>
-                                <div key={index} className='md:flex hover:scale-105 duration-300 ease-in hover:shadow-lg justify-between max-w-[564px] w-full p-5 border rounded-[20px] bg-gradient-to-l from-[#42265914]'>
+                            <div key={index + Date.now() + item}>
+                                <div className='md:flex hover:scale-105 duration-300 ease-in hover:shadow-lg justify-between max-w-[564px] w-full p-5 border rounded-[20px] bg-gradient-to-l from-[#42265914]'>
                                     <div className=' max-w-[254px] '>
                                         <div className='w-[151px] font-font_heebo pb-5 '>
                                             <p className=' pb-[15px] text-[34px]'>{item.off}</p>
@@ -72,7 +72,7 @@ function Bestselling() {
                                 </div>
 
 
-                            </>
+                            </div>
                         ))
                     }
                 </div>

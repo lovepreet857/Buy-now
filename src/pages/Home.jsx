@@ -23,7 +23,6 @@ const Home = () => {
       <NewArrivals Title={"Top products for top brands"} info={'Top brands up to 30% off'} step={"solid"} Data={ArrivalData}/>
         <Newarivalpart/>
         <Bluetooth/>
-        
       <Featured data={RelatedData} Title={"Related items for you"}/>
       <NewPartnerdata/>
       

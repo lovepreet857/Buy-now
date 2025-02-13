@@ -7,10 +7,10 @@ function touch() {
         <>
             <section>
                 <div className='container'>
-                    <div className='sm:pt-20 pt-10 pb-10 border-b sm:border-none'>
+                    <div className='sm:pt-20 pt-10 border-b mb-5 md:mb-10'>
                         <p className='text-[24px] sm:text-[34px] leading-[41px] font-font_heebo  pb-[20px] sm:pb-[10px]'>Get In touch!</p>
                         <div className='flex justify-between items-center'>
-                            <div className='hidden  sm:flex items-center gap-2 text-[16px] leading-[24px] pt-[10px] font-font_inter'>
+                            <div className='hidden  sm:flex items-center gap-2 text-[16px] leading-[24px] pt-[10px] font-font_inter pb-[21px]'>
                                 <Link to="/">  <button className='text-gray-gray_200 hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in' >Home</button> </Link>
                                 <button onClick={() => setActive(!active)}>
                                     <img className={`transition-all duration-300 ${active && "rotate-90"}`} src="src/assets/icons/leftblue.svg" alt="" />
@@ -20,7 +20,7 @@ function touch() {
 
                         </div>
                     </div>
-                    <div className='md:flex justify-between'>
+                    <div className='md:flex md:justify-between '>
                         <div className='max-w-[662px] w-full'>
                             <p className='text-[20px] font-font_heebo pb-5'>Contact us</p>
                             <input className='border w-full rounded-[30px] py-4 px-5 mb-5' type="text" placeholder='Name' />
@@ -36,7 +36,7 @@ function touch() {
                             <button className=' w-full md:max-w-[166px] py-2 px-[22px] border rounded-[30px] bg-purple-purple_100 text-white-white_100 font-font_inter mt-5'>send message</button>
                         </div>
                         <div>
-                            <img src="src/assets/Images/map.png" alt="" />
+                            <img className='w-full' src="src/assets/Images/map.png" alt="" />
                         </div>
                     </div>
                 </div>

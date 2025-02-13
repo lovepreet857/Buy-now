@@ -1,0 +1,150 @@
+[
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre3.svg",
+        "Image":"lenovo1.png",
+        "Paragraph":"Lenovo ThinkBook 15 Intel 11th Gen Core",
+        "Price":"$ 150.00"
+       
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre6.svg",
+        "Image":"lenovo2.png",
+        "Paragraph":"Lenovo V15 Intel Celeron N4020..",
+        "Price":"$ 150.00"
+       
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre3.svg",
+        "Image":"hp1.png",
+        "Paragraph":"Boat Rockerz 425 Bluetooth Wireless",
+        "Price":"$ 180.00"
+       
+    },
+    {
+        "Buy":"buy",
+        "imge12":"Arrowlineright.svg",
+        "offre":"offre2.svg",
+        "Image":"hp2.png",
+        "Paragraph":"HP 14s, 5th Gen AMD Ryzen 3- 8GB RAM",
+        "Price":"$ 254.00"
+       
+    },
+
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre2.svg",
+            "Image":"laptop.png",
+            "Paragraph":"Hp 15S AMD Ryzen 3- 5300U 15.6 Inches",
+            "Price":"$ 400.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre1.svg",
+            "Image":"detailiphone.png",
+            "Paragraph":"Apple iPhone SE (64 GB) - Midnight",
+            "Price":"$ 150.00"
+           
+        },
+        {
+       
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre1.svg",
+            "Image":"iphone.png",
+            "Paragraph":"Apple iPhone 13 Pro Max (128GB)",
+            "Price":"$ 300.00"
+        },
+        {
+       
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre2.svg",
+            "Image":"samsung.png",
+            "Paragraph":"Samsung Galaxy M12 (Blue, 4GB RAM)",
+            "Price":"$ 253.00"
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a2.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a3.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a4.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a5.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a6.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a7.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        },
+        {
+            "Buy":"buy",
+            "imge12":"Arrowlineright.svg",
+            "offre":"offre5.svg",
+            "Image":"redmi9a8.png",
+            "Paragraph":"Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage)",
+            "Price":"$ 59.00"
+           
+        }
+
+    
+    
+]
