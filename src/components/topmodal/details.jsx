@@ -140,8 +140,8 @@ function details() {
           <div className=' grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center'>
           {
                 Detail.map((item,index)=>(
-                  <div className=' max-w-[270px] w-full border transition-all hover:scale-105 duration-300 ease-in hover:shadow-xl rounded-[10px] bg-[#42265914] ]'>
-                  <div key={index + Date.now() + item} className=' relative'>
+                  <div key={index + Date.now() + item} className=' max-w-[270px] w-full border transition-all hover:scale-105 duration-300 ease-in hover:shadow-xl rounded-[10px] bg-[#42265914] ]'>
+                  <div className=' relative'>
                         <img className=' absolute top-5 left-5' src={`src/assets/icons/${item.offre}`} alt="" />
 
                         <img className=' absolute right-[31px] top-[10px]' src={`src/assets/icons/${item.imge1}`} alt="" />

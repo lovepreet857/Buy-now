@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <>
       <section>
-        <div className='bg-white-white_100 border-b font-font_inter'>
+        <div className='bg-white-white_100 border-b'>
           <div className='bg-black-black_100 max-w-full py-3'>
             <div className='container'>
-              <div className=" flex justify-between text-sm text-gray-gray_100">
+              <div className=" flex justify-between md:Sametext1 Sametext2">
                 <div className='flex  gap-[10px] '>
                   <img className=' hidden md:flex' src="src/assets/icons/new.svg" alt="scooty" />
                   <p>Free delivery on $100.00</p>
@@ -47,10 +47,10 @@ const Header = () => {
                 <div className='max-w-[110px] w-full'>
                   <img src="src/assets/icons/Logo.svg" alt="" />
                 </div>
-                <div className=' hidden lg:flex gap-2 justify-around max-w-[380px] w-full text-4 text-gray-gray_200 items-center'>
+                <div className=' hidden lg:flex gap-2 justify-around max-w-[380px] w-full navetext1 items-center'>
                   <Link to="/"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Home</p></Link>
                   <Link to="topdetail"> <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Top deals</p></Link>
-                  <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Hot offers</p>
+                  <Link to="/newtop"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Hot offers</p></Link>
                  <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Pages</p>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Header = () => {
                     <div className='max-w-6 w-full  pl-[3.5px]'>
                       <img src="src/assets/icons/Union.jpg" alt="" />
                     </div>
-                    <input className='max-w-[214px] outline-none' type="text" placeholder='Search' />
+                    <input className=' navetext1 max-w-[214px] outline-none' type="text" placeholder='Search' />
                   </div>
                   <button onClick={() => setActive(!active)} className='rounded-[30px] bg-purple-purple_100 text-white-white_100 flex items-center absolute right-0 px-4 h-full gap-[6px] capitalize'>
                     all

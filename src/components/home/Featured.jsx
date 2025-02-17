@@ -12,7 +12,7 @@ function Featured({ data, Title }) {
         <>
           <section>
           <div className='container py-20'>
-                <div className='flex sm:text-[34px] text-2xl  justify-between sm:pb-10 pb-5 '>
+                <div className='flex md:cardhaeding newcard1  justify-between sm:pb-10 pb-5 '>
                     <p>{Title}</p>
                     <div className='sm:flex max-w-[95px] hidden w-full items-end'>
                         <button ref={prevRef}>
@@ -39,17 +39,25 @@ function Featured({ data, Title }) {
                         }}
                         breakpoints={{
                             0: {
-                              slidesPerView: 1.9,
+                              slidesPerView: 1,
                             },
                             425: {
-                              slidesPerView: 2.5,
+                              slidesPerView: 1.5,
                             },
-                            640: {
+                            525: {
+                                slidesPerView: 2,
+                              },
+                            768: {
+                              slidesPerView: 3,
+                            },
+                            1068: {
                               slidesPerView: 3.5,
                             },
-                            768: {
-                              slidesPerView: 3.50,
-                            },
+                            1150:{
+                                slidesPerView: 4,
+                            }
+                    
+                        
                           }}
                         className="mySwiper"
                     >

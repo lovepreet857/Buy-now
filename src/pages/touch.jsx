@@ -20,7 +20,7 @@ function touch() {
 
                         </div>
                     </div>
-                    <div className='md:flex md:justify-between '>
+                    <div className='md:flex md:justify-between justify-items-center'>
                         <div className='max-w-[662px] w-full'>
                             <p className='text-[20px] font-font_heebo pb-5'>Contact us</p>
                             <input className='border w-full rounded-[30px] py-4 px-5 mb-5' type="text" placeholder='Name' />
@@ -36,7 +36,17 @@ function touch() {
                             <button className=' w-full md:max-w-[166px] py-2 px-[22px] border rounded-[30px] bg-purple-purple_100 text-white-white_100 font-font_inter mt-5'>send message</button>
                         </div>
                         <div>
-                            <img className='w-full' src="src/assets/Images/map.png" alt="" />
+                            {/* <img className='w-full' src="src/assets/Images/map.png" alt="" /> */}
+                            <iframe className='w-full sm:w-[466px] '
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55199.41529528346!2d74.19721845!3d30.152460799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3917a79154f86721%3A0x4ce09ae52bb2fd93!2sAbohar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1739425419090!5m2!1sen!2sin"
+                                width={600}
+                                height={450}
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            />
+
                         </div>
                     </div>
                 </div>

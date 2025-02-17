@@ -5,8 +5,53 @@
 @layer utilities{
 
 .container{
-
   @apply max-w-[1190px] w-full px-5 m-auto
+}
+
+.Sametext1{
+  @apply text-sm font-normal leading-[166%] tracking-[0.04px] text-gray-gray_100 font-font_inter
+}
+.Sametext2{
+  @apply text-xs font-normal leading-[166%] tracking-[0.03px] text-gray-gray_100 font-font_inter
+}
+.navetext1{
+  @apply text-gray-gray_200 text-base font-medium tracking-[0.15px] font-font_inter
+}
+.bannertext1{
+  @apply  text-black-black_100 text-6xl font-medium leading-[120%] tracking-[-0.5px] font-font_heebo
+}
+.bannertext2{
+  @apply  text-black-black_100 text-[34px] font-medium leading-[120%] tracking-[-0.5px] font-font_heebo
+}
+.bannertext3{
+  @apply  text-black-black_100 text-xl font-medium leading-[160%] tracking-[0.15px] font-font_heebo
+}
+.bannertext4{
+  @apply to-black-black_100 text-base font-medium tracking-[0.15px] font-font_inter
+}
+.button1{
+  @apply text-white-white_100 font-font_inter font-medium text-[15px] tracking-[0.46px] leading-[173%]
+}
+.cardhaeding{
+  @apply text-black-black_100 font-medium font-font_heebo text-[34px] tracking-[0.25px] leading-[123.5%]
+}
+.newcard{
+  @apply text-xl font-medium font-font_heebo leading-[160%] tracking-[0.15px]
 
 }
+.newcard1{
+  @apply text-2xl font-medium font-font_heebo 
+}
+.newbye{
+  @apply text-sm font-medium  tracking-[0.04px] text-purple-purple_100 font-font_inter
+}
+.newpara{
+  @apply text-sm font-normal leading-[166%] tracking-[0.17px] font-font_inter
+
+}
+.text14px{
+  @apply text-sm font-medium leading-[171%] tracking-[0.04px] text-gray-gray_200 font-font_inter
+
+}
+
 }

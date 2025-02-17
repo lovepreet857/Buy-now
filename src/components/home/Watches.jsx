@@ -9,8 +9,8 @@ export default function Featured() {
     
       <div className='container'>
       <div className='max-w-[1152px] w-full pb-10'>
-        <h1 className='font-font_heebo text-[34px] pb-5 text-black-black_100'>Category products Collections</h1>
-        <div className=' overflow-x-auto overflow-y-hidden flex gap-3 list-none md:justify-between border-b text-[14px] font-font_inter text-gray-gray_200  '>
+        <h1 className='newcard1 md:cardhaeding pb-5 '>Category products Collections</h1>
+        <div className=' overflow-x-auto overflow-y-hidden flex gap-3 list-none md:justify-between border-b text14px '>
           {
             ["Watches","Mobiles","Laptops","Tablets","Headphones","Printers","Scanners","Speakers","Compu-ters","Smart tv.","Monitors"].map((item,index)=>(
               <div key={index + Date.now() + item}>
@@ -30,7 +30,7 @@ export default function Featured() {
             <Link to={item.to}>
 
               <div className='max-w-[365px] w-full grid justify-items-center py-5 border rounded-[20px] bg-pink-pink_1 hover:scale-105 duration-300 ease-in hover:shadow-lg'>
-                <h1 className='text-[20px] font-font_heebo'>{item.head}</h1>
+                <h1 className='bannertext4 md:newcard'>{item.head}</h1>
               
                 <div className='grid grid-cols-2 '>
                   <img className=' rounded-tl-[20px]' src={`src/assets/Images/${item.watch1}`} alt="" />
@@ -39,7 +39,7 @@ export default function Featured() {
                   <img className='rounded-br-[20px]' src={`src/assets/Images/${item.watch4}`} alt="" />
                 </div>
 
-                <button className='flex items-center max-w-[108px] w-full py-[6px] px-2 justify-between font-font_inter text-purple-purple_100'>{item.button}
+                <button className='flex items-center max-w-[108px] w-full py-[6px] px-2 justify-between newbye'>{item.button}
                   <img src={`src/assets/icons/${item.right}`} alt="" />
                 </button>
               </div>
