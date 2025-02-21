@@ -1,0 +1,18 @@
+[
+    {
+        "href":"/",
+        "name":"Home"
+    },
+    {
+        "href":"/card",
+        "name":"Top deals"
+    },
+    {
+        "href":"/topdetail",
+        "name":"Hot offers"
+    },
+    {
+        "href":"/",
+        "name":"Pages"
+    }
+]

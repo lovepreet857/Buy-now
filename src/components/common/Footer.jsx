@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, Links } from 'react-router-dom'
 import footerdata from "../..//json/footer.json";
 const Footer = () => {
 
-
+const [data,setdata]=useState(0)
   return (
     <>
       <footer>
@@ -18,7 +18,7 @@ const Footer = () => {
             <img className='max-w-6 w-full' src="src/assets/icons/newsarch.svg" alt="" />
           </div>
         </div>
-        <div className='bg-black-black_100 pt-[115px]'>  {/*main-container*/}
+        <div className='bg-black-black_100 pt-[115px]'> 
 
 
           <div className="container ">
@@ -61,15 +61,21 @@ const Footer = () => {
                 <div className=' bg-black-black_200 rounded-[30px] max-w-[732px] w-full: h-[497px] translate-t-10 pt-10 pb-10 px-7  grid justify-center'>
                   <div className='flex md:gap-[10px] lg:gap-[90.5px] max-w-[564px] pb-10 w-full  pt-10  md:pt-0'>
                     {
-                      footerdata.map((items,index)=>(
+                      footerdata.map((item,index)=>(
                         <div key={index} className="flex flex-col gap-10" >
-                          <p className=" font-font_heebo" >{items.head}</p>
+                          <p className=" font-font_heebo" >{item.head}</p>
                           <div className="flex flex-col gap-5 font-font_inter">
-                        <p className="">{items.text1}</p>
-                        <p className="">{items.text2}</p>
-                        <p className="">{items.text3}</p>
-                        <p className="">{items.text4}</p>
-                        <p className="">{items.text5}</p>
+                            {
+                              item?.links?.map((e,index)=>{
+                                return(
+
+                                <Link to={e.link} >
+                                  {e.name}
+                                  </Link>
+                                )
+                              })
+                            }
+                            
                           </div>
                         </div>
                       ))

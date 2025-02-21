@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Pages from '../../json/pages.json'
+import Popus from "../ul/popups";
 const Header = () => {
 
   const [active, setActive] = useState(false);
-  console.log(active, "active")
+  const [mainu, setMainu] = useState(false);
+  // const [Click, setClick] = useState(false);?
+
   return (
     <>
       <section>
@@ -27,34 +31,44 @@ const Header = () => {
           </div>
           <div className='container'>
             <nav className=' flex justify-between items-center  py-[19px] '>
-              <div className='md:hidden'>
+              <div className='lg:hidden'>
                 <div className='max-w-[110px] w-full'>
                   <img src="src/assets/icons/Logo.svg" alt="" />
                 </div>
-              </div>
-              <div className=' md:hidden max-w-[112px] w-full h-5 flex gap-2  '>
+              </div>  
+              <div className=' lg:hidden max-w-[112px] w-full h-5 flex gap-2 justify-end  relative '>
                 <img src="src/assets/icons/Union.jpg" alt="" />
                 <img src="src/assets/icons/Badge W.Icon.svg" alt="" />
-                <button>
-
-                  <img src="src/assets/icons/mainu.svg" alt="" />
-
+                <button onClick={()=> setMainu(!mainu)}>
+                  <img className={`transition-all duration-300 ${mainu && "hidden"}`} src="src/assets/icons/mainu.svg" alt="" />
+                  <img className={`transition-all duration-300  ${mainu ? " block " : "hidden"}`} src="src/assets/icons/cross.svg" alt="" />
                 </button>
-
+                
+                {
+                  mainu && (
+                 
+                      <Popus Acount={"solid1"} className={"top-12 duration-700"}/>
+                   
+                  )
+                }
               </div>
 
-              <div className=' hidden md:flex gap-[30px] md:max-w-[520px] md:w-full items-center'>
+              <div className=' hidden lg:flex gap-[30px] md:max-w-[520px] md:w-full items-center'>
                 <div className='max-w-[110px] w-full'>
                   <img src="src/assets/icons/Logo.svg" alt="" />
                 </div>
                 <div className=' hidden lg:flex gap-2 justify-around max-w-[380px] w-full navetext1 items-center'>
-                  <Link to="/"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Home</p></Link>
-                  <Link to="topdetail"> <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in '>Top deals</p></Link>
-                  <Link to="/newtop"><p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Hot offers</p></Link>
-                 <p className=' hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>Pages</p>
+                  {
+                    Pages.map((items,index)=>(
+                      <div key={index + Date.now() + items}>
+                      <Link to={items.href} className='hover:text-yellow-yellow_102 hover:scale-105 duration-300 ease-in'>{items.name}</Link>
+
+                      </div>
+                    ))
+                  }
                 </div>
               </div>
-              <div className=' hidden md:flex md:max-w-[198px] lg:max-w-[498px] w-full justify-between'>
+              <div className=' hidden lg:flex md:max-w-[198px] lg:max-w-[498px] w-full justify-between'>
                 <div className=' hidden lg:flex justify-between   max-w-[270px] w-full border-2  rounded-[30px] relative'>
                   <div className='flex gap-2 items-center pl-3'>
                     <div className='max-w-6 w-full  pl-[3.5px]'>
@@ -66,22 +80,31 @@ const Header = () => {
                     all
                     <img className={`transition-all duration-300 ${active && "rotate-180"}`} src="src/assets/icons/Vector.png" alt="" />
                   </button>
+
+                  {
+                    active && (<>
+                    <Popus Acount={"solid"} className={"top-12 duration-700"}/>
+                    </>)
+                  }
                 </div>
-                <div className=' hidden md:flex justify-between  md:max-w-[170px] lg:max-[198px]: w-full items-center'>
+                <div className='flex justify-between  md:max-w-[170px] lg:max-[198px]: w-full items-center'>
                   <img src="src/assets/icons/Langauge.svg" alt="" />
                   <img src="src/assets/icons/Rectangle 19.svg" alt="" />
-                  <img src="src/assets/icons/Badge W.Icon.svg" alt="" />
+                  <Link to="touch"><button> <img src="src/assets/icons/Badge W.Icon.svg" alt="" /></button>  </Link>
                   <img src="src/assets/icons/Rectangle 19.svg" alt="" />
-                  <Link to="touch">
                   <button className='border-[1px] hover:bg-yellow-yellow_102 duration-300 ease-in rounded-[50%] py-[10px] px-[10px]'>
                     <img src="src/assets/icons/PersonOutlineOutlined.svg" alt="" />
                   </button>
-                  </Link>
+                
                 </div>
               </div>
             </nav>
           </div>
         </div>
+
+   
+       
+
       </section>
     </>
   )

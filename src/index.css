@@ -53,5 +53,16 @@
   @apply text-sm font-medium leading-[171%] tracking-[0.04px] text-gray-gray_200 font-font_inter
 
 }
+.text400{
+  @apply text-base font-normal tracking-[0.15px] text-gray-gray_200 font-font_inter
+
+}
+.text500{
+  @apply text-base font-medium tracking-[0.15px] text-gray-gray_200 font-font_inter
+
+}
+.textnew12{
+  @apply text-sm font-medium  tracking-[0.04px] font-font_inter
+}
 
 }

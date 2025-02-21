@@ -50,7 +50,8 @@ function details() {
                                                     <img className={`transition-all duration-700 ${active && "rotate-180"}`} src="src/assets/icons/Newvector.svg" alt="" />
                                                 </button>
                                             </div>
-                                            <div className={`transition-all duration-300   ${active && "  grid gap-[5px]  pb-[10px]"}`} hidden >
+                                            <div className={` transition-all duration-300 overflow-hidden   ${active ? "h-[291px]" : "h-0"
+                                                }`}>
                                                 {
                                                     New.map((item, index) => (
                                                         <div key={index + Date.now() + item}>

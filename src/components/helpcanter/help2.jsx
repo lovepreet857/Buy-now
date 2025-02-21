@@ -8,8 +8,6 @@ function help2() {
     const [button5,setButton5] = useState(false)
 
 
-
-
     return (
         <>
             <section>
